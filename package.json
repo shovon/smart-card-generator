@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^17.0.10",
+    "@types/node-jose": "^1.1.8",
+    "@types/promise-fs": "^2.1.2",
+    "node-jose": "^2.0.0"
+  }
+}
