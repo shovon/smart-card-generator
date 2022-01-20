@@ -1,0 +1,1 @@
+/v1/issuer/.well-known/* /v1/issuer/well-known/:splat 200!

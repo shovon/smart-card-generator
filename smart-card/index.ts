@@ -41,7 +41,8 @@ function smartCardFormat(str: string): string {
 
 function generateSmartCardPayload(): any {
   return {
-    iss: "https://smarthealthcard.phsa.ca/v1/issuer",
+    // iss: "https://smarthealthcard.phsa.ca/v1/issuer",
+    iss: "https://raw.githubusercontent.com/shovon/smart-card-generator/main/public-key-store/v1/issuer",
     nbf: 1635675317,
     vc: {
       type: [
@@ -61,11 +62,11 @@ function generateSmartCardPayload(): any {
                 resourceType: "Patient",
                 name: [
                   {
-                    family: "RAHMAN",
-                    given: ["SALEHEN", "SHOVON"],
+                    family: "MCSMARTYPANTS",
+                    given: ["SMARTY", "SMART"],
                   },
                 ],
-                birthDate: "1991-03-06",
+                birthDate: "1976-01-10",
               },
             },
             {
@@ -96,18 +97,18 @@ function generateSmartCardPayload(): any {
                 patient: {
                   reference: "resource:0",
                 },
-                occurrenceDateTime: "2021-04-27",
+                occurrenceDateTime: "2021-05-01",
                 manufacturer: {
                   identifier: {
                     system: "http://hl7.org/fhir/sid/mvx",
-                    value: "ASZ",
+                    value: "MOD",
                   },
                 },
                 lotNumber: "CTMAV532",
                 performer: [
                   {
                     actor: {
-                      display: "BC, Canada",
+                      display: "North Pole",
                     },
                   },
                 ],
@@ -141,7 +142,7 @@ function generateSmartCardPayload(): any {
                 patient: {
                   reference: "resource:0",
                 },
-                occurrenceDateTime: "2021-06-29",
+                occurrenceDateTime: "2021-05-21",
                 manufacturer: {
                   identifier: {
                     system: "http://hl7.org/fhir/sid/mvx",
@@ -152,7 +153,7 @@ function generateSmartCardPayload(): any {
                 performer: [
                   {
                     actor: {
-                      display: "BC, Canada",
+                      display: "North Pole",
                     },
                   },
                 ],
